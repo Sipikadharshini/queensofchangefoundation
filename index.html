@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queens of Change Foundation | Empowering Women, Creating Change</title>
+  <meta name="description" content="Empowering underprivileged women and girls across India through dignity, menstrual health awareness, education, and opportunity. Join the movement.">
+  <meta name="author" content="Queens of Change Foundation">
+  <meta name="keywords" content="women empowerment, menstrual health, NGO India, women education, sanitary pads, charity, volunteer">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://queensofchange.org">
+  <meta property="og:title" content="Queens of Change Foundation | Empowering Women, Creating Change">
+  <meta property="og:description" content="Empowering underprivileged women and girls across India through dignity, menstrual health awareness, education, and opportunity.">
+  <meta property="og:image" content="hero.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Queens of Change Foundation | Empowering Women, Creating Change">
+  <meta property="twitter:description" content="Empowering underprivileged women and girls across India through dignity, menstrual health awareness, education, and opportunity.">
+  <meta property="twitter:image" content="hero.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Blurs -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="main-header">
+    <div class="nav-container container">
+      <a href="#" class="brand" aria-label="Queens of Change Foundation Homepage">
+        <svg class="brand-logo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="url(#logoGrad)" />
+          <!-- Crown Shape -->
+          <path d="M12 26 L10 16 L17 21 L20 13 L23 21 L30 16 L28 26 Z" fill="white" />
+          <!-- Lotus base -->
+          <path d="M12 26 C15 28, 25 28, 28 26 C26 29, 14 29, 12 26 Z" fill="rgba(255,255,255,0.7)" />
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ec4899" />
+              <stop offset="1" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Queens <span class="highlight">of Change</span></span>
+          <span class="brand-sub">Foundation</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#timeline" class="nav-link">Success Path</a>
+        <a href="#pillars" class="nav-link">What We Do</a>
+        <a href="#calculator" class="nav-link">Impact Calculator</a>
+        <a href="#transparency" class="nav-link">Transparency</a>
+        <a href="#stories" class="nav-link">Stories</a>
+      </nav>
+
+      <!-- Utility Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark Mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button id="openVolunteerModalBtn" class="btn btn-primary nav-cta">Join Us</button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu Panel -->
+    <div class="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#timeline" class="mobile-link">Success Path</a>
+        <a href="#pillars" class="mobile-link">What We Do</a>
+        <a href="#calculator" class="mobile-link">Impact Calculator</a>
+        <a href="#transparency" class="mobile-link">Transparency</a>
+        <a href="#stories" class="mobile-link">Stories</a>
+        <button id="mobileVolunteerBtn" class="btn btn-primary w-full mt-4">Join as Volunteer</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section container section-spacing">
+      <div class="grid-2 gap-lg items-center">
+        <!-- Hero Text -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="tag-badge">
+            <span class="tag-dot"></span>
+            Empowering Women, Uplifting Communities
+          </div>
+          <h1 class="hero-title">
+            Her Strength. <br>
+            Her Story. <br>
+            <span class="gradient-text">Our Change.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Queens of Change Foundation is a government registered, all-women organization dedicated to empowering underprivileged young women, restoring dignity, and creating systemic opportunities across communities.
+          </p>
+          <div class="hero-ctas">
+            <button class="btn btn-gradient btn-lg trigger-volunteer-modal">Volunteer With Us</button>
+            <a href="#matcher" class="btn btn-outline btn-lg">Match Your Skills</a>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-visual reveal-on-scroll delay-1">
+          <div class="image-wrapper">
+            <img src="hero.png" alt="Empowered Indian women learning together with confidence, representing community change and growth" class="hero-img">
+            <div class="image-overlay-glow"></div>
+            <!-- Decorative Cards floating around image -->
+            <div class="floating-badge badge-1">
+              <span class="badge-icon">🌸</span>
+              <span class="badge-text">Dignity Restored</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <span class="badge-icon">👑</span>
+              <span class="badge-text">100% Women-Led</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section container section-spacing">
+      <div class="about-wrapper glass-panel reveal-on-scroll">
+        <div class="grid-2 gap-md items-center">
+          <div class="about-text">
+            <div class="tag-badge">Indian Society Act, 1860</div>
+            <h2 class="section-title text-left">About Our Foundation</h2>
+            <p class="body-text-lg">
+              Queens Of Change Foundation is a Government registered organization, established under the Indian Society Act, 1860. We are an all-women organization dedicated to empowering women and restoring dignity, equality, and opportunity across communities.
+            </p>
+            <p class="body-text">
+              For many women and girls, access to basic sanitary hygiene is a daily struggle, affecting their health, education, and self-confidence. We tackle this head-on: *we adopt slums and provide free sanitary pads every month*, while running scientific awareness workshops to challenge and break long-standing societal stigmas.
+            </p>
+            <p class="body-text">
+              Beyond health, we support women through comprehensive education and skill development, helping them gain confidence, unlock their full potential, and achieve financial independence so they can uplift themselves and their families.
+            </p>
+          </div>
+          <div class="about-graphic">
+            <svg class="about-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0.8"/>
+                </linearGradient>
+                <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="var(--primary)" flood-opacity="0.15"/>
+                </filter>
+              </defs>
+              <circle cx="200" cy="200" r="140" fill="url(#grad1)" filter="url(#shadow)" />
+              <circle cx="290" cy="110" r="40" fill="none" stroke="var(--primary)" stroke-width="3" stroke-dasharray="8,8" />
+              <path d="M160,250 C180,260 220,260 240,250 C260,240 280,210 280,180 C280,150 250,130 200,130 C150,130 120,150 120,180 C120,210 140,240 160,250 Z" fill="rgba(255,255,255,0.15)" backdrop-filter="blur(5px)" />
+              <path d="M200,150 C215,170 215,190 200,210 C185,190 185,170 200,150 Z" fill="white" />
+              <path d="M200,210 L200,230" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              <path d="M200,175 C210,180 220,180 225,175" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M200,195 C190,200 180,200 175,195" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Longitudinal 7-Year Success Journey Visual Timeline (New Enhancement 2) -->
+    <section id="timeline" class="timeline-section container section-spacing">
+      <div class="tag-badge text-center" style="display: block; margin: 0 auto 16px; width: max-content;">Longitudinal Progress Track</div>
+      <h2 class="section-title">The 7-Year Success Journey</h2>
+      <p class="section-subtitle">We don't believe in quick-fix aids. Our longitudinal program targets a 4-to-7 year developmental runway from early adolescence through the first college year.</p>
+
+      <div class="timeline-container relative">
+        <div class="timeline-progress-line" id="timelineProgress"></div>
+
+        <!-- Timeline Node 1 -->
+        <div class="timeline-node left-node reveal-on-scroll">
+          <div class="timeline-badge-year">Year 1</div>
+          <div class="timeline-card glass-panel">
+            <h3 class="timeline-card-title">Foundation & Health (Ages 11-12)</h3>
+            <p class="body-text">
+              We intercept cycles early in middle school. Girls enter our regular distribution pipelines inside adopted slums and attend scientific seminars debunking myths, ensuring they continue school attendance during puberty.
+            </p>
+            <span class="timeline-card-tag">Dignity & Hygiene</span>
+          </div>
+        </div>
+
+        <!-- Timeline Node 2 -->
+        <div class="timeline-node right-node reveal-on-scroll">
+          <div class="timeline-badge-year">Year 3</div>
+          <div class="timeline-card glass-panel">
+            <h3 class="timeline-card-title">Leadership & Confidence (Ages 13-14)</h3>
+            <p class="body-text">
+              Transitioning into high school, girls form regional leadership circles. They are mentored by professional women in speaking up, negotiating hygiene rights, and leading local peer support groups.
+            </p>
+            <span class="timeline-card-tag font-purple">Peer Leadership</span>
+          </div>
+        </div>
+
+        <!-- Timeline Node 3 -->
+        <div class="timeline-node left-node reveal-on-scroll">
+          <div class="timeline-badge-year">Year 5</div>
+          <div class="timeline-card glass-panel">
+            <h3 class="timeline-card-title">Skilling & Digital Literacy (Ages 15-16)</h3>
+            <p class="body-text">
+              Addressing workforce readiness, we provide access to skilling clinics. Girls study digital literacy, introductory coding, business development, and target career entry points to break generational poverty.
+            </p>
+            <span class="timeline-card-tag font-blue">Workforce Readiness</span>
+          </div>
+        </div>
+
+        <!-- Timeline Node 4 -->
+        <div class="timeline-node right-node reveal-on-scroll">
+          <div class="timeline-badge-year">Year 7</div>
+          <div class="timeline-card glass-panel">
+            <h3 class="timeline-card-title">Transformation & University (Ages 17-18)</h3>
+            <p class="body-text">
+              Providing access to scholarships and mentoring during their first completed year of college. Over 94% of our young women matriculate directly to a 4-year university as the first in their families to do so.
+            </p>
+            <span class="timeline-card-tag font-green">Higher Education</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slum Adoption Interactive Tracker -->
+    <section id="slums" class="slums-section container section-spacing">
+      <h2 class="section-title">Adopted Slums & Outreach Map</h2>
+      <p class="section-subtitle">We adopt urban and rural slums, establishing sanitary supply pipelines and local leadership circles. Click each zone to view our impact footprint.</p>
+      
+      <div class="slum-interactive-wrapper glass-panel reveal-on-scroll">
+        <div class="grid-2 gap-md items-center">
+          <!-- Interactive Zone Grid -->
+          <div class="slum-zones-grid">
+            <button class="slum-zone-card active" data-zone="lucknow">
+              <span class="zone-icon">🌸</span>
+              <div class="zone-info">
+                <h4>Lucknow Slum Hub</h4>
+                <p>Zone A • Adoptions</p>
+              </div>
+            </button>
+            <button class="slum-zone-card" data-zone="kanpur">
+              <span class="zone-icon">🌱</span>
+              <div class="zone-info">
+                <h4>Kanpur Central Slums</h4>
+                <p>Zone B • Adoptions</p>
+              </div>
+            </button>
+            <button class="slum-zone-card" data-zone="delhi">
+              <span class="zone-icon">👑</span>
+              <div class="zone-info">
+                <h4>Noida-Delhi Border camps</h4>
+                <p>Zone C • Adoptions</p>
+              </div>
+            </button>
+            <button class="slum-zone-card" data-zone="jaipur">
+              <span class="zone-icon">📚</span>
+              <div class="zone-info">
+                <h4>Jaipur Slum Enclaves</h4>
+                <p>Zone D • Adoptions</p>
+              </div>
+            </button>
+          </div>
+
+          <!-- Zone Detailed Report Card -->
+          <div class="slum-report-container">
+            <div class="results-card slum-report-card">
+              <h3 class="results-card-title" id="reportTitle">Lucknow Slum Hub Impact</h3>
+              
+              <div class="metric-row">
+                <div class="metric-icon-box">🏡</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="reportFamilies">1,200+</div>
+                  <div class="metric-description">Families Provided with Monthly Dignity Kits</div>
+                </div>
+              </div>
+
+              <div class="metric-row">
+                <div class="metric-icon-box">🌸</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="reportPads">45,000+</div>
+                  <div class="metric-description">Sanitary Pads Distributed in Lucknow</div>
+                </div>
+              </div>
+
+              <div class="metric-row">
+                <div class="metric-icon-box">🎓</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="reportWorkshops">120+</div>
+                  <div class="metric-description">Hygiene & Stigma seminars Held</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Stats Dashboard Section -->
+    <section id="impact" class="stats-section container section-spacing">
+      <h2 class="section-title">Our Collective Footprint</h2>
+      <p class="section-subtitle">Real, measurable change driven by passionate advocates across the nation.</p>
+      
+      <div class="stats-grid">
+        <!-- Stat Card 1 -->
+        <div class="stat-card glass-panel reveal-on-scroll">
+          <div class="stat-icon-wrapper">
+            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="200000">145000</span><span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Free Sanitary Pads Distributed</p>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="stat-card glass-panel reveal-on-scroll delay-1">
+          <div class="stat-icon-wrapper">
+            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="500">1000</span><span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Communities Supported</p>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="stat-card glass-panel reveal-on-scroll delay-2">
+          <div class="stat-icon-wrapper">
+            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="50000">10000</span><span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Lives Directly Impacted</p>
+        </div>
+
+        <!-- Stat Card 4 -->
+        <div class="stat-card glass-panel reveal-on-scroll delay-3">
+          <div class="stat-icon-wrapper">
+            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="100">100</span><span class="stat-suffix">%</span>
+          </div>
+          <p class="stat-label">Women-Led Organization</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillars Section (What We Do) -->
+    <section id="pillars" class="pillars-section container section-spacing">
+      <h2 class="section-title">Core Pillars of Action</h2>
+      <p class="section-subtitle">How we implement change across four complementary social dimensions.</p>
+
+      <div class="grid-2-col gap-md">
+        <!-- Pillar Card 1 -->
+        <div class="pillar-card glass-panel reveal-on-scroll">
+          <div class="pillar-header">
+            <div class="pillar-badge">🌸</div>
+            <h3 class="pillar-title">Sanitary Pad Distribution</h3>
+          </div>
+          <p class="pillar-desc">
+            We adopt urban and rural slums to establish regular pad supply pipelines. We distribute high-quality, biodegradable sanitary napkins completely free of cost to local schoolgirls and women every month.
+          </p>
+          <div class="pillar-footer-link">
+            <span>Learn about distribution drives</span>
+            <span class="arrow-icon">→</span>
+          </div>
+        </div>
+
+        <!-- Pillar Card 2 -->
+        <div class="pillar-card glass-panel reveal-on-scroll delay-1">
+          <div class="pillar-header">
+            <div class="pillar-badge">📚</div>
+            <h3 class="pillar-title">Scientific Health Education</h3>
+          </div>
+          <p class="pillar-desc">
+            We hold scientific, informative, and stigma-busting seminars on female biology, safe hygiene practices, and nutritional requirements. We empower girls to discuss menstruation openly and with pride rather than shame.
+          </p>
+          <div class="pillar-footer-link">
+            <span>Explore our curriculum</span>
+            <span class="arrow-icon">→</span>
+          </div>
+        </div>
+
+        <!-- Pillar Card 3 -->
+        <div class="pillar-card glass-panel reveal-on-scroll">
+          <div class="pillar-header">
+            <div class="pillar-badge">👑</div>
+            <h3 class="pillar-title">Women Empowerment</h3>
+          </div>
+          <p class="pillar-desc">
+            Beyond immediate aid, we build livelihood avenues. We guide girls into coding, digital literacy, and leadership mentoring programs to help them navigate career entry points and stand as self-sufficient guides.
+          </p>
+          <div class="pillar-footer-link">
+            <span>Check out skill programs</span>
+            <span class="arrow-icon">→</span>
+          </div>
+        </div>
+
+        <!-- Pillar Card 4 -->
+        <div class="pillar-card glass-panel reveal-on-scroll delay-1">
+          <div class="pillar-header">
+            <div class="pillar-badge">🤝</div>
+            <h3 class="pillar-title">Community Outreach</h3>
+          </div>
+          <p class="pillar-desc">
+            We collaborate with grassroots authorities, village leaders, and families. We understand that changing social behavior surrounding menstruation requires educating boys and men, transforming society completely.
+          </p>
+          <div class="pillar-footer-link">
+            <span>Join our outreach team</span>
+            <span class="arrow-icon">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Skill Matcher Dashboard -->
+    <section id="matcher" class="matcher-section container section-spacing">
+      <h2 class="section-title">Find Your Perfect Volunteer Match</h2>
+      <p class="section-subtitle">We have opportunities matching every level of availability and background. Select your time commitment below to reveal your matched role.</p>
+
+      <div class="matcher-wrapper glass-panel reveal-on-scroll">
+        <div class="matcher-controls">
+          <div class="time-tabs">
+            <button class="time-tab-btn active" data-time="hours-year">
+              <span class="tab-icon">⏱️</span>
+              <div class="tab-info">
+                <strong>Few Hours / Year</strong>
+                <small>Flexible Commitment</small>
+              </div>
+            </button>
+            <button class="time-tab-btn" data-time="hours-month">
+              <span class="tab-icon">🗓️</span>
+              <div class="tab-info">
+                <strong>Few Hours / Month</strong>
+                <small>Ongoing Involvement</small>
+              </div>
+            </button>
+            <button class="time-tab-btn" data-time="hours-week">
+              <span class="tab-icon">👑</span>
+              <div class="tab-info">
+                <strong>Several Hours / Week</strong>
+                <small>Core Stakeholder</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="matcher-result-box mt-md">
+          <div class="matcher-result-card" id="matcherResult">
+            <div class="matcher-badge" id="matchBadge">One-time / Program Volunteer</div>
+            <h3 class="matcher-result-title" id="matchTitle">Community Drive Champion</h3>
+            <p class="body-text" id="matchDesc">
+              Become a boots-on-the-ground volunteer for our monthly sanitary pad distribution drives or help organize localized fundraising campaigns. Perfect for busy professionals who want to make a targeted, immediate difference.
+            </p>
+            <div class="matcher-bullet-list" id="matchBullets">
+              <div><span>✓</span> Direct community engagement</div>
+              <div><span>✓</span> Help distribute biodegradable kits</div>
+              <div><span>✓</span> Ideal for groups and corporate days</div>
+            </div>
+            <button class="btn btn-gradient mt-md trigger-volunteer-modal" id="matchCtaBtn">Apply as Drive Champion</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Certificate Real-Time Previewer (New Enhancement 1) -->
+    <section id="certificate-previewer" class="certificate-previewer-section container section-spacing">
+      <div class="tag-badge text-center" style="display: block; margin: 0 auto 16px; width: max-content;">Direct Volunteer Incentive</div>
+      <h2 class="section-title">Volunteer Recognition</h2>
+      <p class="section-subtitle">We highly appreciate our changemakers. Type your name below to preview the official appreciation certificate you will earn after completing our outreach drives.</p>
+
+      <div class="certificate-wrapper-container glass-panel reveal-on-scroll">
+        <div class="grid-2 gap-md items-center">
+          
+          <!-- Control Panel -->
+          <div class="cert-controls-panel">
+            <h3 class="alliance-subtitle-heading">Earn Your Credentials</h3>
+            <p class="body-text mb-md">
+              Every drive participant, mentor, and regional coordinator is officially certified by the Board of Directors, documenting social leadership and community impact hours.
+            </p>
+            <div class="form-group">
+              <label for="certNameInput" class="form-label">Type Your Full Name</label>
+              <input type="text" id="certNameInput" class="form-input" placeholder="Your Name Here" maxlength="28" aria-label="Certificate name preview input">
+            </div>
+            <button id="printCertBtn" class="btn btn-outline mt-sm w-full">
+              <span>🖨️</span> Print / Save Certificate
+            </button>
+            <div class="chart-info-box mt-md">
+              <span class="info-spark">🏆</span>
+              <p class="text-xs">Perfect for adding to your **LinkedIn Profile, Resume**, or academic scholarship files!</p>
+            </div>
+          </div>
+
+          <!-- Live Glass Certificate Frame -->
+          <div class="cert-view-frame">
+            <div class="premium-certificate" id="certFrame">
+              <div class="cert-border-gold"></div>
+              
+              <!-- Certificate Content -->
+              <div class="cert-content">
+                <div class="cert-header">
+                  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="url(#certLogoGrad)" />
+                    <path d="M12 26 L10 16 L17 21 L20 13 L23 21 L30 16 L28 26 Z" fill="white" />
+                    <defs>
+                      <linearGradient id="certLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#ec4899" />
+                        <stop offset="1" stop-color="#8b5cf6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <span>Queens of Change Foundation</span>
+                </div>
+                
+                <h4 class="cert-main-title">Certificate of Appreciation</h4>
+                <p class="cert-body-intro">This is proudly presented to</p>
+                
+                <!-- Dynamic Name output -->
+                <div class="cert-name-output" id="certNameOutput">Your Name Here</div>
+                
+                <p class="cert-body-text">
+                  in recognition of their extraordinary dedication and invaluable voluntary service in our Menstrual Hygiene, Slum Outreach, and Women Skill Development campaigns, fostering sustainable change and dignity.
+                </p>
+
+                <!-- Footer stamps & signatures -->
+                <div class="cert-footer-row">
+                  <div class="cert-sign-col">
+                    <span class="cert-signature-draw">Priya Sharma</span>
+                    <span class="cert-sign-line"></span>
+                    <span class="cert-sign-label">Outreach Director</span>
+                  </div>
+                  
+                  <!-- Golden Seal SVG -->
+                  <div class="cert-seal-box">
+                    <svg class="cert-seal" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="26" fill="#facc15" stroke="#eab308" stroke-width="2" />
+                      <path d="M30 14 L34 23 L44 23 L36 29 L39 39 L30 33 L21 39 L24 29 L16 23 L26 23 Z" fill="white" />
+                    </svg>
+                  </div>
+
+                  <div class="cert-sign-col">
+                    <span class="cert-signature-draw">Anjali Y.</span>
+                    <span class="cert-sign-line"></span>
+                    <span class="cert-sign-label">Board of Directors</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Calculator Section -->
+    <section id="calculator" class="calculator-section container section-spacing">
+      <div class="calculator-wrapper glass-panel reveal-on-scroll">
+        <div class="grid-2 gap-lg items-center">
+          <!-- Calculator Mechanics -->
+          <div class="calc-controls">
+            <h2 class="section-title text-left mb-sm">See Your Impact In Real-Time</h2>
+            <p class="body-text mb-md">
+              Your donations directly fund sanitary pads and health workshops. Drag the slider below to see how a simple contribution makes a massive difference in a girl's life.
+            </p>
+
+            <div class="input-slider-group">
+              <div class="slider-labels">
+                <span class="slider-label-title">Donation Amount (INR)</span>
+                <span id="amountDisplay" class="slider-value">₹ 2,000</span>
+              </div>
+              <input type="range" id="donationSlider" min="200" max="10000" step="200" value="2000" class="premium-slider" aria-label="Donation amount slider">
+              <div class="slider-ticks">
+                <span>₹200</span>
+                <span>₹2,500</span>
+                <span>₹5,000</span>
+                <span>₹7,500</span>
+                <span>₹10,000</span>
+              </div>
+            </div>
+
+            <div class="calculator-cta mt-md">
+              <button class="btn btn-gradient btn-lg trigger-volunteer-modal">Support This Impact</button>
+            </div>
+          </div>
+
+          <!-- Impact Metrics & Fun Visuals -->
+          <div class="calc-results relative">
+            <div class="heart-sparks-container" id="heartSparks"></div>
+            <div class="results-card">
+              <h3 class="results-card-title">Impact Generated</h3>
+              
+              <div class="metric-row">
+                <div class="metric-icon-box">🌸</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="padsCount">200</div>
+                  <div class="metric-description">Sanitary Pads Distributed</div>
+                </div>
+              </div>
+
+              <div class="metric-row">
+                <div class="metric-icon-box">👩</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="girlsCount">16</div>
+                  <div class="metric-description">Girls Supported with 1-Year Supplies</div>
+                </div>
+              </div>
+
+              <div class="metric-row">
+                <div class="metric-icon-box">🏫</div>
+                <div class="metric-data">
+                  <div class="metric-big-number" id="weeksCount">80</div>
+                  <div class="metric-description">School Attendance Weeks Preserved</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Budget Donut Chart (New Enhancement 3) -->
+    <section id="transparency" class="transparency-section container section-spacing">
+      <div class="tag-badge text-center" style="display: block; margin: 0 auto 16px; width: max-content;">Accountability & Ethics</div>
+      <h2 class="section-title">Where Your Funds Go</h2>
+      <p class="section-subtitle">We maintain a meticulous record of financial efficiency. Over 90% of all capital goes directly into slum supplies and direct education.</p>
+
+      <div class="transparency-wrapper glass-panel reveal-on-scroll">
+        <div class="grid-2 gap-lg items-center">
+          
+          <!-- Dynamic Chart Visualizer -->
+          <div class="transparency-chart-box">
+            <div class="donut-chart-container relative">
+              <svg class="donut-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- SVG path slices for 75%, 15%, 10% -->
+                <!-- Slum Care (75%): Dash array formula. Circumference = 2 * PI * R (R=35) => 219.9 -->
+                <!-- Slum (75%): length = 164.9, gap = 55.0. Offset = 0 -->
+                <circle cx="50" cy="50" r="35" class="donut-segment segment-slum" stroke-dasharray="164.9 55" stroke-dashoffset="0" aria-label="Slum care 75% slice" />
+                
+                <!-- Seminars (15%): length = 33.0, gap = 186.9. Offset starts at -164.9 -->
+                <circle cx="50" cy="50" r="35" class="donut-segment segment-seminars" stroke-dasharray="33.0 186.9" stroke-dashoffset="-164.9" aria-label="Scientific seminars 15% slice" />
+                
+                <!-- Skilling (10%): length = 22.0, gap = 197.9. Offset starts at -197.9 -->
+                <circle cx="50" cy="50" r="35" class="donut-segment segment-skilling" stroke-dasharray="22.0 197.9" stroke-dashoffset="-197.9" aria-label="Skilling mentor 10% slice" />
+              </svg>
+
+              <!-- Central label readout -->
+              <div class="donut-center-label">
+                <span class="donut-percent" id="donutPercent">75%</span>
+                <span class="donut-category" id="donutCategory">Slum Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transparency details Legend -->
+          <div class="transparency-legend-panel">
+            <h3 class="alliance-subtitle-heading mb-md">Direct Spending Footprint</h3>
+            <p class="body-text mb-md">Hover over each category on the chart or click the bars below to see exact operational descriptions of how resources are invested.</p>
+
+            <div class="transparency-legend-list">
+              <!-- Item 1 -->
+              <button class="legend-card active" data-percent="75" data-cat="Slum Care" data-desc="Used directly to source and manufacture biodegradable sanitary napkins, compile family dignity kits, and manage monthly distribution logistics inside adopted slum hubs.">
+                <span class="legend-dot dot-slum"></span>
+                <div class="legend-data">
+                  <span class="legend-title">Slum Care & Distributions</span>
+                  <span class="legend-figure">75% of Budget</span>
+                </div>
+              </button>
+
+              <!-- Item 2 -->
+              <button class="legend-card" data-percent="15" data-cat="Seminars" data-desc="Directly funds informational charts, models, and reproductive education curriculums for schoolgirls and Anganwadi community facilitators.">
+                <span class="legend-dot dot-seminars"></span>
+                <div class="legend-data">
+                  <span class="legend-title">Scientific Health Seminars</span>
+                  <span class="legend-figure">15% of Budget</span>
+                </div>
+              </button>
+
+              <!-- Item 3 -->
+              <button class="legend-card" data-percent="10" data-cat="Skilling" data-desc="Secures local skilling lab rentals, digital literacy tools, and maintains mentorship programs to guide girls into higher education.">
+                <span class="legend-dot dot-skilling"></span>
+                <div class="legend-data">
+                  <span class="legend-title">Digital Skilling & Mentoring</span>
+                  <span class="legend-figure">10% of Budget</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Spending details box -->
+            <div class="spending-description-box mt-md" id="spendingDesc">
+              Used directly to source and manufacture biodegradable sanitary napkins, compile family dignity kits, and manage monthly distribution logistics inside adopted slum hubs.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories (Testimonials) -->
+    <section id="stories" class="stories-section container section-spacing">
+      <h2 class="section-title">Stories of Change</h2>
+      <p class="section-subtitle">Real testimonials from the girls and women whose futures were altered.</p>
+
+      <div class="carousel-container glass-panel reveal-on-scroll">
+        <div class="carousel-wrapper" id="carouselWrapper">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-slide active-slide">
+            <div class="slide-content">
+              <div class="quote-mark">“</div>
+              <p class="quote-text">
+                This foundation changed my life. I received not just sanitary pads but education about health and dignity. Now I work with them as a student advocate to educate other girls in my school.
+              </p>
+              <div class="quote-author">
+                <div class="author-details">
+                  <span class="author-name">Priya S.</span>
+                  <span class="author-location">Student Advocate • Kanpur, UP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="quote-mark">“</div>
+              <p class="quote-text">
+                In our village, discussing periods was forbidden. Queens of Change held workshops for both mothers and daughters. Today, our girls walk to school with confidence and without fear of stains or shame.
+              </p>
+              <div class="quote-author">
+                <div class="author-details">
+                  <span class="author-name">Savitri Devi</span>
+                  <span class="author-location">Village Anganwadi Worker • Alwar, Rajasthan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="quote-mark">“</div>
+              <p class="quote-text">
+                Through their digital skilling program, I learned basic programming and web development. The mentorship gave me the courage to apply for an IT internship. They opened a door I didn’t know existed.
+              </p>
+              <div class="quote-author">
+                <div class="author-details">
+                  <span class="author-name">Anjali Yadav</span>
+                  <span class="author-location">Skills Student • Delhi NCR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Buttons -->
+        <button class="carousel-nav prev-btn" id="prevSlide" aria-label="Previous Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-nav next-btn" id="nextSlide" aria-label="Next Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner container">
+      <div class="cta-wrapper glass-panel reveal-on-scroll">
+        <h2 class="cta-title">Ready to be a Queen of Change?</h2>
+        <p class="cta-subtitle">
+          Your time, your voice, or your support can make an irreversible difference. Join us today as a volunteer, donate, or follow our story.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-gradient btn-lg trigger-volunteer-modal">Register as Volunteer</button>
+          <a href="mailto:info@queensofchange.org" class="btn btn-outline btn-lg">Email Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Newsletter & Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- About / Brand Column -->
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <svg class="brand-logo" width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="url(#footerLogoGrad)" />
+            <path d="M12 26 L10 16 L17 21 L20 13 L23 21 L30 16 L28 26 Z" fill="white" />
+            <defs>
+              <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ec4899" />
+                <stop offset="1" stop-color="#8b5cf6" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">Queens <span class="highlight">of Change</span></span>
+        </div>
+        <p class="footer-desc">
+          Restoring dignity, health, and economic self-sufficiency to underprivileged girls and women, ensuring periods never stall opportunities or dreams.
+        </p>
+        <p class="footer-meta">
+          Government registered organization established under Indian Society Act, 1860.
+        </p>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#timeline">Success Path</a></li>
+          <li><a href="#pillars">Our Pillars</a></li>
+          <li><a href="#calculator">Impact Calculator</a></li>
+          <li><a href="#transparency">Transparency</a></li>
+          <li><a href="#stories">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials / Join Column -->
+      <div class="footer-col social-col">
+        <h4 class="footer-heading">Follow The Movement</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook Icon" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" aria-label="Instagram Icon" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Twitter Icon" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn Icon" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+        <p class="footer-email-label">Stay Connected via Newsletter</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your Email Address" required class="newsletter-input" aria-label="Newsletter email address">
+          <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to newsletter">→</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-copyright container">
+      <p>&copy; 2026 Queens of Change Foundation. All rights reserved. </p>
+      <p class="credits-tag">Designed with Passion for Social Justice & Women Empowerment</p>
+    </div>
+  </footer>
+
+  <!-- Volunteer Form Overlay Modal -->
+  <div class="modal-overlay" id="volunteerModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-card glass-panel">
+      <button class="modal-close-btn" id="closeVolunteerModalBtn" aria-label="Close Registration Modal">&times;</button>
+      
+      <h3 class="modal-title" id="modalTitle">Be The Change</h3>
+      <p class="modal-subtitle">Register to volunteer or collaborate with our regional hubs.</p>
+      
+      <form class="modal-form" id="volunteerForm">
+        <div class="form-group">
+          <label for="volunteerName" class="form-label">Full Name *</label>
+          <input type="text" id="volunteerName" required class="form-input" placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="volunteerEmail" class="form-label">Email Address *</label>
+          <input type="email" id="volunteerEmail" required class="form-input" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="volunteerInterest" class="form-label">Core Area of Interest *</label>
+          <select id="volunteerInterest" required class="form-input select-input">
+            <option value="" disabled>Select an area</option>
+            <option value="pad-distribution" selected>Pad Distribution Drives</option>
+            <option value="seminars">Health & Hygiene Seminars</option>
+            <option value="skilling">Mentorship & Coding Skilling</option>
+            <option value="outreach">Community Outreach & Events</option>
+            <option value="mentor">Become a One-to-One Mentor</option>
+            <option value="leadership">Leadership Team / Board Member</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="volunteerMessage" class="form-label">Why do you want to join? (Optional)</label>
+          <textarea id="volunteerMessage" rows="3" class="form-input text-area-input" placeholder="Share your motivation..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gradient w-full btn-lg mt-sm">Submit Application</button>
+      </form>
+
+      <!-- Celebratory Success State (hidden initially) -->
+      <div class="modal-success-state" id="modalSuccessState">
+        <div class="success-icon">✨</div>
+        <h4 class="success-title">Thank You, Champion!</h4>
+        <p class="success-desc">
+          Your application has been logged. An outreach director from Queens of Change will coordinate with you via email within 48 hours. Let's make an impact together!
+        </p>
+        <button class="btn btn-gradient mt-md" id="closeSuccessBtn">Close Panel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript Controller -->
+  <script src="app.js"></script>
+</body>
+</html>
