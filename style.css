@@ -91,6 +91,7 @@ html.dark {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -562,6 +563,7 @@ html.dark .moon-icon { display: block; }
 .tag-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: var(--primary-alpha);
   border: 1px solid var(--border-color);
   color: var(--primary);
@@ -574,6 +576,9 @@ html.dark .moon-icon { display: block; }
   text-transform: uppercase;
   letter-spacing: 0.05em;
   gap: 8px;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal;
 }
 
 .tag-dot {
@@ -2064,6 +2069,11 @@ html.dark .moon-icon { display: block; }
     padding-right: 0;
     text-align: left !important;
   }
+
+  .left-node,
+  .right-node {
+    left: 0;
+  }
   
   .left-node .timeline-badge-year,
   .right-node .timeline-badge-year {
@@ -2549,7 +2559,192 @@ html.dark .cert-signature-draw {
 }
 
 /* --------------------------------------------------------------------------
-   21. Print Media Query for Certificate Generation
+   21. Mobile-First Fine Tuning
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  .main-header {
+    height: 74px;
+  }
+
+  .nav-container {
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .brand-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
+  }
+
+  .brand-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .theme-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mobile-menu {
+    top: 74px;
+  }
+
+  .mobile-menu.open {
+    height: calc(100vh - 74px);
+  }
+
+  .mobile-nav-links {
+    padding: 28px 20px;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .mobile-link {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 11vw, 2.9rem);
+  }
+
+  .hero-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .hero-ctas,
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .hero-ctas .btn,
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .floating-badge {
+    display: none;
+  }
+
+  .time-tab-btn,
+  .slum-zone-card,
+  .legend-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .matcher-result-card,
+  .cta-wrapper {
+    padding: 32px 20px;
+  }
+
+  .timeline-container {
+    margin-top: 24px;
+  }
+
+  .timeline-node {
+    padding-left: 58px;
+  }
+
+  .timeline-badge-year {
+    width: 46px;
+    height: 46px;
+    top: 24px;
+    font-size: 0.72rem;
+  }
+
+  .left-node .timeline-badge-year,
+  .right-node .timeline-badge-year {
+    left: -3px;
+  }
+
+  .timeline-card {
+    padding: 24px 20px;
+  }
+
+  .timeline-card-title {
+    font-size: 1.08rem;
+  }
+
+  .slider-ticks {
+    font-size: 0.65rem;
+    gap: 8px;
+  }
+
+  .metric-row {
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .metric-big-number {
+    font-size: 1.45rem;
+  }
+
+  .quote-mark {
+    font-size: 5rem;
+    margin-bottom: 12px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .quote-author {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cert-header {
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .cert-body-text {
+    font-size: 0.76rem;
+  }
+
+  .cert-footer-row {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .cert-sign-col {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .cert-sign-label {
+    font-size: 0.56rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   22. Print Media Query for Certificate Generation
    -------------------------------------------------------------------------- */
 @media print {
   body {
